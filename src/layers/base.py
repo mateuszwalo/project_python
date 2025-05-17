@@ -1,10 +1,4 @@
-"""Abstrakcyjne definicje wszystkich warstw używanych w **NumPyLayer Lab**.
-
-Projekt korzysta wyłącznie z NumPy – bez zewnętrznych bibliotek ML.
-Każda konkretna warstwa musi dziedziczyć po :class:`Layer` i implementować
-metody :py:meth:`forward` (propagacja w przód) oraz :py:meth:`backward`
-(liczenie gradientu i opcjonalną aktualizację wag).
-"""
+"""Abstrakcyjne definicje wszystkich warstw."""
 from __future__ import annotations
 
 from abc import ABC, abstractmethod
@@ -22,12 +16,12 @@ class Layer(ABC):
     forward(x)
         Zwraca wynik propagacji w przód.
     backward(grad: np.ndarray, lr: float) -> np.ndarray
-        Oblicza gradient względem wejścia i – jeśli warstwa ma parametry –
+        Oblicza gradient względem wejścia i - jeśli warstwa ma parametry -
         aktualizuje je przy użyciu tempa uczenia *lr*.
 
     Warstwa może przechowywać atrybuty:
-    * params – słownik trenowalnych parametrów, np. {'W': ..., 'b': ...}
-    * grads  – odpowiadające im gradienty po ostatnim `backward`.
+    * params - słownik trenowalnych parametrów, np. {'W': ..., 'b': ...}
+    * grads  - odpowiadające im gradienty po ostatnim `backward`.
     """
 
     def __init__(self) -> None:

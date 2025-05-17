@@ -1,11 +1,4 @@
-"""Narzędzia pomocnicze (helpery) używane w **NumPyLayer Lab**.
-
-* `set_seed` – ustawia ziarno RNG NumPy (powtarzalność eksperymentów),
-* `one_hot`  – zamienia etykiety liczbowe na macierz one‑hot,
-* `batch_generator` – pętla `yield` zwracająca mini‑batch X, y do uczenia.
-
-> Wszystkie funkcje są niewielkie, ale mocno upraszczają kod w
-> pozostałych modułach.
+"""Narzędzia pomocnicze (helpery) używane w **NumPyLayer Lab**
 """
 from __future__ import annotations
 

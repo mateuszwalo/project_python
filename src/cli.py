@@ -8,7 +8,7 @@ Polecenia (wpisz `help`, aby zobaczyć listę):
   list                           pokazuje aktualną architekturę
   del  <index>                   usuwa warstwę o podanym indeksie
   move <from> <to>               przestawia warstwę
-  train [epochs] [lr] [batch]    trenuje sieć na wbudowanym zbiorze Digits 8×8
+  train [epochs] [lr] [batch]    trenuje sieć na wbudowanym zbiorze Digits 8x8
   save <prefix>                  zapisuje <prefix>.json + <prefix>.npz
   load <prefix>                  wczytuje model z <prefix>.json/.npz
   export <csv_path>              zapisuje historię loss/accuracy do CSV

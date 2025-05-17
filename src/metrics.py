@@ -1,6 +1,4 @@
-"""Moduł metryk i eksportu wyników dla **NumPyLayer Lab**.
-
-Zawiera funkcje do oceny klasyfikatora oraz zapis historii uczenia do pliku CSV.
+"""Moduł metryk i eksportu wyników.
 """
 from __future__ import annotations
 
@@ -25,7 +23,7 @@ def accuracy(preds: np.ndarray, labels: np.ndarray) -> float:
 def save_history_csv(history: List[dict[str, float]], path: Path) -> None:
     """Zapisuje historię treningu (lista słowników z kluczami 'epoch', 'loss') do CSV."""
     path.parent.mkdir(parents=True, exist_ok=True)
-    logs_dir = Path("logs")
+    logs_dir     = Path("logs")
     logs_dir.mkdir(parents=True, exist_ok=True)
     csv_file = logs_dir / path.name
     with csv_file.open("w", newline="") as f:

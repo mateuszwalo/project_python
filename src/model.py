@@ -1,4 +1,4 @@
-"""Moduł `model` – klasa Model zarządza listą warstw, procesem uczenia,
+"""Moduł `model` - klasa Model zarządza listą warstw, procesem uczenia,
 prognozowaniem, zapisem/odczytem architektury i wag."""
 from __future__ import annotations
 

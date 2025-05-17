@@ -1,4 +1,4 @@
-"""Podstawowe funkcje aktywacji zaimplementowane w czystym NumPy.
+"""Podstawowe funkcje aktywacji 
 
 Każda klasa dziedziczy po abstrakcji Layer i implementuje forward/backward.
 Warstwy nie mają parametrów do uczenia, więc metoda `params` zwraca pusty słownik.

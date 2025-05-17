@@ -1,4 +1,4 @@
-"""Warstwa gęsta (Fully Connected) napisana wyłącznie w NumPy.
+"""Warstwa gęsta
 
 Zawiera proste uczenie metodą SGD w funkcji `backward`.  Wektor biasu `b`
 jest tablicą o kształcie (1, out_features), co ułatwia broadcast przy
@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import numpy as np
 from typing import Dict, Any
-
 from .base import Layer
 
 
