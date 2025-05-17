@@ -1,0 +1,6 @@
+numpy>=1.25
+rich>=13.5
+matplotlib>=3.8 
+pytest>=8.0
+scikit-learn>=1.4
+
