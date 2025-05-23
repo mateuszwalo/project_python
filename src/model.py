@@ -12,7 +12,7 @@ from .layers.base import Layer
 from .layers.dense import Dense
 from .layers.activation import ReLU, LeakyReLU, Softmax
 
-# Mapa nazw warstw na klasy – używana przy wczytywaniu
+# Mapa nazw warstw na klasy - używana przy wczytywaniu
 LAYER_MAP: dict[str, Type[Layer]] = {
     'Dense': Dense,
     'ReLU': ReLU,

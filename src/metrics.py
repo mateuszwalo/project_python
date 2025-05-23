@@ -28,7 +28,6 @@ def save_history_csv(history: List[dict[str, float]], path: Path) -> None:
     csv_file = logs_dir / path.name
     with csv_file.open("w", newline="") as f:
         writer = csv.writer(f)
-        # nagłówek
         writer.writerow(["epoch", "loss"] + (["accuracy"] if "accuracy" in history[0] else []))
         for rec in history:
             row = [rec.get("epoch"), rec.get("loss")]
